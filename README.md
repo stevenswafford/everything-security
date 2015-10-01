@@ -43,7 +43,9 @@
 * [sslstrip](http://www.thoughtcrime.org/software/sslstrip/) - a demonstration of the HTTPS stripping attacks
 
 #### Crackers
+* [AirCrack](http://www.aircrack-ng.org/) - Aircrack-ng is an 802.11 WEP and WPA-PSK keys cracking program.
 * [John the Ripper](http://www.openwall.com/john/) - Fast password cracker
+* [Lophcrack](http://www.l0phtcrack.com) - Hash extraction from 64 bit Windows, multiprocessor algorithms, network monitoring and decoding.
 * [Online MD5 cracker](http://www.md5crack.com/) - Online MD5 hash Cracker
 
 #### Windows Utils
