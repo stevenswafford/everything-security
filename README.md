@@ -1,17 +1,3 @@
-          )            (
-         /(   (\___/)  )\  _____________
-        ( #)  \ (- -) ( # |        '\\\\\\
-         ||___c\   >'__|  |        ' ____|_
-         ||**** )`_/ **'  |   +    '||::::::
-   .__   |'* ___| |___*'  |        '||_____|
-    \_|  |'*(    ~   ,)'  \'_______|_____|
-      )) |' /(.  '  .)\   ___/____|___\___
-     (( _""";!___*_____\_|    _    '  <<<:|
-       /     /|          |_________'___o_o| b'ger
-      /_____/ /
-      |:____|/  "Boy, I love this stuff".
-
-
 ### Online Resources
 #### Penetration Testing Resources
 * [Metasploit Unleashed](http://www.offensive-security.com/metasploit-unleashed/) - Free Offensive Security metasploit course
