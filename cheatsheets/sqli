@@ -1,15 +1,16 @@
 # SQLi Cheat Sheet
+====================
 
-#Comments
+# Comments
 /* – Multi line comment.
 # – single line comment.
 -- – single line comment.
 /*!*/ – Mysql special comments.
 
-#Whitespaces.
+# Whitespaces.
 +, %2B, %20, %09, %0d ,%0?, /**/, /*foo*/
 
-#Global system variables
+# Global system variables
 @@datadir  // Mysql data directory.
 @@version_compile_os -  //OS Mysql is running on.
 @@version – //Mysql database version.

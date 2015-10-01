@@ -1,3 +1,6 @@
+# Wireshark Cheat Sheet
+=======================
+
 # To start capturing packets on a specified interface
 Capture>"Interfaces ...">[Select interface(s)]>Start
 
@@ -17,3 +20,23 @@ Capture>"Options...">[Uncheck "Use promiscuious mode on all interfaces"]>Start
 View>"Wireless Toolbar" then
 "Wireless Toolbar">"Decryption Keys..."
 
+# Packets with port 443
+tcp.port==443
+
+# Packets with destination port 443
+tcp.dstport==443
+
+# HTTP GET requests
+http contains GET
+
+# 401 authentication challenges
+http contains 401
+
+# Java user-agent strings
+http.user_agent contains Java
+
+# Packets to and from a host
+ip.addr==192.168.152.150
+
+# SSL Certificates
+ssl.handshake.certificate

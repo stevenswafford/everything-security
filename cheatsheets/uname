@@ -1,3 +1,6 @@
+# uname Cheat Sheet
+===================
+
 # Print all system information
 uname -a
 # Linux system-hostname 3.2.0-4-amd64 #1 SMP Debian 3.2.32-1 x86_64 GNU/Linux
@@ -25,3 +28,7 @@ uname -s
 # Print the operating system
 uname -o
 # GNU/Linux
+
+# Print hardware platform
+uname -i
+# i386
