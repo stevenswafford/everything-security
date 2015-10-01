@@ -1,22 +1,13 @@
-# everything-security
-security related events, tools, tutorials, cheatsheets, and more.
 ### Online Resources
 #### Penetration Testing Resources
 * [Metasploit Unleashed](http://www.offensive-security.com/metasploit-unleashed/) - Free Offensive Security metasploit course
 * [PTES](http://www.pentest-standard.org/) - Penetration Testing Execution Standard
 * [OWASP](https://www.owasp.org/index.php/Main_Page) - Open Web Application Security Project 
 
-#### Shellcode development
-* [Shellcode Tutorials](http://www.projectshellcode.com/?q=node/12) - Tutorials on how to write shellcode
-* [Shellcode Examples](http://shell-storm.org/shellcode/) - Shellcodes database
-
 ### Tools
 #### Penetration Testing Distributions
 * [Kali](http://www.kali.org/) - A Linux distribution designed for digital forensics and penetration testing
 * [BlackArch](http://www.blackarch.org/) - Arch Linux-based distribution for penetration testers and security researchers
-* [NST](http://networksecuritytoolkit.org/) - Network Security Toolkit distribution 
-* [Pentoo](http://www.pentoo.ch/) -  security-focused livecd based on Gentoo
-* [BackBox](http://www.backbox.org/) - Ubuntu-based distribution for penetration tests and security assessments
 
 #### Basic Penetration Testing Tools
 * [Metasploit Framework](http://www.metasploit.com/) - World's most used penetration testing software
@@ -41,8 +32,6 @@ security related events, tools, tutorials, cheatsheets, and more.
 * [Wireshark](http://www.wireshark.org/) - A network protocol analyzer for Unix and Windows
 * [Network Tools](http://network-tools.com/) - Different network tools: ping, lookup, whois, etc
 * [netsniff-ng](https://github.com/netsniff-ng/netsniff-ng) - A Swiss army knife for for network sniffing
-* [Intercepter-NG](http://intercepter.nerf.ru/) - a multifunctional network toolkit
-* [SPARTA](http://sparta.secforce.com/) - Network Infrastructure Penetration Testing Tool
 
 #### Wireless Network Tools
  * [Aircrack-ng](http://www.aircrack-ng.org/) - a set of tools for auditing wireless network
@@ -89,37 +78,20 @@ security related events, tools, tutorials, cheatsheets, and more.
 * [Vulnerability Laboratory](http://www.vulnerability-lab.com/) - Vulnerability Research Laboratory
 * [ZDI](http://www.zerodayinitiative.com/) - Zero Day Initiative
 
-
 ### Security Courses
 * [Offensive Security Training](http://www.offensive-security.com/information-security-training/) - Training from BackTrack/Kali developers
 * [SANS Security Training](http://www.sans.org/) - Computer Security Training & Certification
 * [Open Security Training](http://opensecuritytraining.info/) - Training material for computer security classes
-* [CTF Field Guide](https://trailofbits.github.io/ctf/) - everything you need to win your next CTF competition
-* [Cybrary](https://www.cybrary.it/) - online IT and Cyber Security training platform
-
 
 ### Information Security Conferences
-* [DEF CON](https://www.defcon.org/) - An annual hacker convention in Las Vegas
 * [Black Hat](http://www.blackhat.com/) - An annual security conference in Las Vegas
 * [BSides](http://www.securitybsides.com/) - A framework for organising and holding security conferences
-* [CCC](http://events.ccc.de/congress/) - An annual meeting of the international hacker scene in Germany
+* [DEF CON](https://www.defcon.org/) - An annual hacker convention in Las Vegas
 * [DerbyCon](https://www.derbycon.com/) - An annual hacker conference based in Louisville
 * [PhreakNIC](http://phreaknic.info/) - A technology conference held annually in middle Tennessee
+* [SkyDogCon](http://www.skydogcon.com/) - A technology conference in Nashville, TN
 * [ShmooCon](http://www.shmoocon.org/) - An annual US east coast hacker convention
-* [CarolinaCon](http://www.carolinacon.org/) - An infosec conference, held annually in North Carolina
-* [HOPE](http://hope.net/) - A conference series sponsored by the hacker magazine 2600
-* [SummerCon](http://www.summercon.org/) - One of the oldest hacker conventions, held during Summer
-* [Hack.lu](http://hack.lu/) - An annual conference held in Luxembourg
-* [HITB](http://conference.hitb.org/) - Deep-knowledge security conference held in Malaysia and The Netherlands
-* [Troopers](https://www.troopers.de) - Annual international IT Security event with workshops held in Heidelberg, Germany
-* [Hack3rCon](http://hack3rcon.org/) - An annual US hacker conference
 * [ThotCon](http://thotcon.org/) - An annual US hacker conference held in Chicago
-* [LayerOne](http://www.layerone.org/) - An annual US security conerence held every spring in Los Angeles
-* [DeepSec](https://deepsec.net/) - Security Conference in Vienna, Austria
-* [SkyDogCon](http://www.skydogcon.com/) - A technology conference in Nashville
-* [SECUINSIDE](http://secuinside.com) - Security Conference in [Seoul](http://en.wikipedia.org/wiki/Seoul)
-* [DefCamp](http://defcamp.ro) - Largest Security Conference in Eastern Europe, held anually in Bucharest, Romania
-
 
 ### Contribution
 Your contributions and suggestions are welcomed!
