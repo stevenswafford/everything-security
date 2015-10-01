@@ -1,0 +1,96 @@
+# Nmap Cheat Sheet
+
+#Basic Syntax
+
+nmap [ScanType] [Options] {targets}
+
+#Target 
+
+IPv4 address: 192.168.1.1
+IPv6 address: AABB:CCDD::FF::
+Host name: www.sniferl4bs.com
+IP address range: 192.168.0-255
+Use file with lists of targets: -iL <filename>
+
+#Discovery Options
+
+Perform a ping scan only 			nmap -sP [target]
+Don’t ping 							nmap -PN [target]
+TCP SYN Ping 						nmap -PS [target]
+TCP ACK ping 						nmap -PA [target]
+UDP ping 							nmap -PU [target]
+SCTP Init Ping 						nmap -PY [target]
+ICMP echo ping						nmap -PE [target]
+ICMP Timestamp ping					nmap -PP [target]
+ICMP address mask ping 				nmap -PM [target]
+IP protocol ping					nmap -PO [target]
+ARP ping							nmap -PR [target]
+Traceroute							nmap –traceroute [target]
+Force reverse DNS resolution		nmap -R [target]
+Disable reverse DNS resolution		nmap -n [target]
+Alternative DNS lookup				nmap –system-dns [target]
+Manually specify DNS –dns-servers 	nmap –dns-servers [servers] [target]
+Create a host lists 				nmap -sL [targets]
+
+#Advanced Scanning Options
+
+TCP SYN Scan 						nmap -sS [target]
+TCP connect scan 					nmap -sT [target]
+UDP scan 							nmap -sU [target]
+TCP Null scan 						nmap -sN [target]
+TCP Fin scan 						nmap -sF [target]
+Xmas scan 							nmap -sX [target]
+TCP ACK scan 						nmap -sA [target]
+Custom TCP scan 					nmap –scanflags [flags] [target]
+IP protocol scan 					nmap -sO [target]
+Send Raw Ethernet packets 			nmap –send-eth [target]
+Send IP packets 					nmap –send-ip [target]
+
+#Port Scanning Options
+
+Perform a fast scan 				nmap -F [target]
+Scan specific ports 				nmap -p [ports] [target]
+Scan ports by name 					nmap -p [port name] [target]
+Scan ports by protocol 				nmap -sU -sT -p U:[ports],T:[ports] [target]
+Scan all ports 						nmap -p “*” [target]
+Scan top ports 						nmap –top-ports [number] [target]
+Perform a sequential port scan 		nmap -r [target]
+
+#Version Detection
+
+Operating system detection 			nmap -O [target]
+Attempt to guess an unknown 		nmap -O –osscan-guess [target]
+Service version detection 			nmap -sV [target]
+Troubleshooting version scans 		nmap -sV –version-trace [target]
+Perform a RPC scan 					nmap -sR [target]
+
+#Output Options
+
+Save output to a text file 			nmap -oN [scan.txt] [target]
+Save output to a xml file 			nmap -oX [scan.xml] [target]
+Grepable output 					nmap -oG [scan.txt] [target]
+Output all supported file types 	nmap -oA [path/filename] [target]
+Periodically display statistics 	nmap –stats-every [time] [target]
+133t output 						nmap -oS [scan.txt] [target]
+
+#Target Ports
+No port range specified scans 1,000 most popular ports
+
+-F Scan 100 most popular ports
+-p<port1>-<port2> Port range
+-p<port1>,<port2>,... Port List
+--top-ports <n> Scan n most popular ports
+
+#Timing Options
+
+-T0 Paranoid: Very slow, used for IDS evasion
+-T1 Sneaky: Quite slow, used for IDS evasion
+-T2 Polite: Slows down to consume less
+ bandwidth, runs ~10 times slower than
+ default
+-T3 Normal: Default, a dynamic timing model
+ based on target responsiveness
+-T4 Aggressive: Assumes a fast and reliable
+ network and may overwhelm targets
+-T5 Insane: Very aggressive; will likely
+ overwhelm targets or miss open ports
