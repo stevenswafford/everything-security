@@ -1,49 +1,5 @@
 # everything-security
 security related events, tools, tutorials, cheatsheets, and more.
-## Awesome Penetration Testing 
-
-
-A collection of awesome penetration testing resources
-
-
-- [Online Resources](#online-resources)
-  - [Penetration Testing Resources](#penetration-testing-resources)
-  - [Shellcode development](#shellcode-development)
-  - [Social Engineering Resources](#social-engineering-resources)
-  - [Lock Picking Resources](#lock-picking-resources)
-- [Tools](#tools)
-  - [Penetration Testing Distributions](#penetration-testing-distributions)
-  - [Basic Penetration Testing Tools](#basic-penetration-testing-tools)
-  - [Vulnerability Scanners](#vulnerability-scanners)
-  - [Network Tools](#network-tools)
-  - [Wireless Network Tools](#wireless-network-tools)
-  - [SSL Analysis Tools](#ssl-analysis-tools)
-  - [Hex Editors](#hex-editors)
-  - [Crackers](#crackers)
-  - [Windows Utils](#windows-utils)
-  - [DDoS Tools](#ddos-tools)
-  - [Social Engineering Tools](#social-engineering-tools)
-  - [OSInt Tools](#osint-tools)
-  - [Anonimity Tools](#anonimity-tools)
-  - [Reverse Engineering Tools](#reverse-engineering-tools)
-- [Books](#books)
-  - [Penetration Testing Books](#penetration-testing-books)
-  - [Hackers Handbook Series](#hackers-handbook-series)
-  - [Network Analysis Books](#network-analysis-books)
-  - [Reverse Engineering Books](#reverse-engineering-books)
-  - [Malware Analysis Books](#malware-analysis-books)
-  - [Windows Books](#windows-books)
-  - [Social Engineering Books](#social-engineering-books)
-  - [Lock Picking Books](#lock-picking-books)
-- [Vulnerability Databases](#vulnerability-databases)
-- [Security Courses](#security-courses)
-- [Information Security Conferences](#information-security-conferences)
-- [Information Security Magazines](#information-security-magazines)
-- [Awesome Lists](#awesome-lists)
-- [Contribution](#contribution)
-- [License](#license)
-
-
 ### Online Resources
 #### Penetration Testing Resources
 * [Metasploit Unleashed](http://www.offensive-security.com/metasploit-unleashed/) - Free Offensive Security metasploit course
@@ -53,13 +9,6 @@ A collection of awesome penetration testing resources
 #### Shellcode development
 * [Shellcode Tutorials](http://www.projectshellcode.com/?q=node/12) - Tutorials on how to write shellcode
 * [Shellcode Examples](http://shell-storm.org/shellcode/) - Shellcodes database
-
-#### Social Engineering Resources
-* [Social Engineering Framework](http://www.social-engineer.org/framework/) - An information resource for social engineers
-
-#### Lock Picking Resources
-* [Schuyler Towne channel](http://www.youtube.com/user/SchuylerTowne/) - Lockpicking videos and security talks
-* [/r/lockpicking](https://www.reddit.com/r/lockpicking) - Resources for learning lockpicking, equipment recommendations.
 
 ### Tools
 #### Penetration Testing Distributions
@@ -104,9 +53,6 @@ A collection of awesome penetration testing resources
 * [SSLyze](https://github.com/nabla-c0d3/sslyze) - SSL configuration scanner
 * [sslstrip](http://www.thoughtcrime.org/software/sslstrip/) - a demonstration of the HTTPS stripping attacks
 
-#### Hex Editors
-* [HexEdit.js](http://hexed.it/) - Browser-based hex editing
-
 #### Crackers
 * [John the Ripper](http://www.openwall.com/john/) - Fast password cracker
 * [Online MD5 cracker](http://www.md5crack.com/) - Online MD5 hash Cracker
@@ -120,87 +66,12 @@ A collection of awesome penetration testing resources
 * [LOIC](https://github.com/NewEraCracker/LOIC/) - An open source network stress tool for Windows
 * [JS LOIC](http://metacortexsecurity.com/tools/anon/LOIC/LOICv1.html) - JavaScript in-browser version of LOIC
 
-#### Social Engineering Tools
-* [SET](https://github.com/trustedsec/social-engineer-toolkit) - The Social-Engineer Toolkit from TrustedSec
-
 #### OSInt Tools
 * [Maltego](http://www.paterva.com/web6/products/maltego.php) - Proprietary software for open source intelligence and forensics, from Paterva.
 
 #### Anonimity Tools
 * [Tor](https://www.torproject.org/) - The free software for enabling onion routing online anonymity
 * [I2P](https://geti2p.net) - The Invisible Internet Project
-
-#### Reverse Engineering Tools
-* [IDA Pro](https://www.hex-rays.com/products/ida/) - A Windows, Linux or Mac OS X hosted multi-processor disassembler and debugger
-* [IDA Free](https://www.hex-rays.com/products/ida/support/download_freeware.shtml) - The freeware version of IDA v5.0
-* [WDK/WinDbg](http://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx) - Windows Driver Kit and WinDbg
-* [OllyDbg](http://www.ollydbg.de/) - An x86 debugger that emphasizes binary code analysis
-* [Radare2](http://rada.re/r/index.html) - Opensource, crossplatform reverse engineering framework.
-* [x64_dbg](http://x64dbg.com/) - An open-source x64/x32 debugger for windows.
-* [Pyew](http://code.google.com/p/pyew/) - A Python tool for static malware analysis.
-* [Bokken](https://inguma.eu/projects/bokken) - GUI for Pyew Radare2.
-* [Immunity Debugger](http://debugger.immunityinc.com/) - A powerful new way to write exploits and analyze malware
-* [Evan's Debugger](http://www.codef00.com/projects#debugger) - OllyDbg-like debugger for Linux
-
-
-### Books
-#### Penetration Testing Books
-* [The Art of Exploitation by Jon Erickson, 2008](http://www.nostarch.com/hacking2.htm)
-* [Metasploit: The Penetration Tester's Guide by David Kennedy and others, 2011](http://www.nostarch.com/metasploit)
-* [Penetration Testing: A Hands-On Introduction to Hacking by Georgia Weidman, 2014](http://www.nostarch.com/pentesting)
-* [Rtfm: Red Team Field Manual by Ben Clark, 2014](http://www.amazon.com/Rtfm-Red-Team-Field-Manual/dp/1494295504/)
-* [The Hacker Playbook by Peter Kim, 2014](http://www.amazon.com/The-Hacker-Playbook-Practical-Penetration/dp/1494932636/)
-* [The Basics of Hacking and Penetration Testing by Patrick Engebretson, 2013](https://www.elsevier.com/books/the-basics-of-hacking-and-penetration-testing/engebretson/978-1-59749-655-1)
-* [Professional Penetration Testing by Thomas Wilhelm, 2013](https://www.elsevier.com/books/professional-penetration-testing/wilhelm/978-1-59749-993-4)
-* [Advanced Penetration Testing for Highly-Secured Environments by Lee Allen,2012](http://www.packtpub.com/advanced-penetration-testing-for-highly-secured-environments/book)
-* [Violent Python by TJ O'Connor, 2012](http://www.elsevier.com/books/violent-python/unknown/978-1-59749-957-6)
-* [Fuzzing: Brute Force Vulnerability Discovery by Michael Sutton, Adam Greene, Pedram Amini, 2007](http://www.fuzzing.org/)
-* [Black Hat Python: Python Programming for Hackers and Pentesters, 2014](http://www.amazon.com/Black-Hat-Python-Programming-Pentesters/dp/1593275900)
-* [Penetration Testing: Procedures & Methodologies (EC-Council Press),2010](http://www.amazon.com/Penetration-Testing-Procedures-Methodologies-EC-Council/dp/1435483677)
-
-#### Hackers Handbook Series
-* [The Shellcoders Handbook by Chris Anley and others, 2007](http://wiley.com/WileyCDA/WileyTitle/productCd-047008023X.html)
-* [The Web Application Hackers Handbook by D. Stuttard, M. Pinto, 2011](http://wiley.com/WileyCDA/WileyTitle/productCd-1118026470.html)
-* [iOS Hackers Handbook by Charlie Miller and others, 2012](http://wiley.com/WileyCDA/WileyTitle/productCd-1118204123.html)
-* [Android Hackers Handbook by Joshua J. Drake and others, 2014](http://wiley.com/WileyCDA/WileyTitle/productCd-111860864X.html)
-* [The Browser Hackers Handbook by Wade Alcorn and others, 2014](http://wiley.com/WileyCDA/WileyTitle/productCd-1118662091.html)
-* [The Mobile Application Hackers Handbook by Dominic Chell and others, 2015](http://wiley.com/WileyCDA/WileyTitle/productCd-1118958500.html)
-
-#### Network Analysis Books
-* [Nmap Network Scanning by Gordon Fyodor Lyon, 2009](http://nmap.org/book/)
-* [Practical Packet Analysis by Chris Sanders, 2011](http://www.nostarch.com/packet2.htm)
-* [Wireshark Network Analysis by by Laura Chappell, Gerald Combs, 2012](http://www.wiresharkbook.com/)
-
-#### Reverse Engineering Books
-* [Reverse Engineering for Beginners by Dennis Yurichev (free!)](http://beginners.re/)
-* [The IDA Pro Book by Chris Eagle, 2011](http://www.nostarch.com/idapro2.htm)
-* [Practical Reverse Engineering by Bruce Dang and others, 2014](http://wiley.com/WileyCDA/WileyTitle/productCd-1118787315.html)
-* [Reverse Engineering for Beginners](http://beginners.re/)
-
-#### Malware Analysis Books
-* [Practical Malware Analysis by Michael Sikorski, Andrew Honig, 2012](http://www.nostarch.com/malware)
-* [The Art of Memory Forensics by Michael Hale Ligh and others, 2014](http://wiley.com/WileyCDA/WileyTitle/productCd-1118825098.html)
-* [Malware Analyst's Cookbook and DVD by Michael Hale Ligh and others, 2010](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470613033.html)
-
-#### Windows Books
-* [Windows Internals by Mark Russinovich, David Solomon, Alex Ionescu](http://technet.microsoft.com/en-us/sysinternals/bb963901.aspx)
-
-#### Social Engineering Books
-* [The Art of Deception by Kevin D. Mitnick, William L. Simon, 2002](http://wiley.com/WileyCDA/WileyTitle/productCd-0471237124.html)
-* [The Art of Intrusion by Kevin D. Mitnick, William L. Simon, 2005](http://wiley.com/WileyCDA/WileyTitle/productCd-0764569597.html)
-* [Ghost in the Wires by Kevin D. Mitnick, William L. Simon, 2011](http://www.hachettebookgroup.com/titles/kevin-mitnick/ghost-in-the-wires/9780316134477/)
-* [No Tech Hacking by Johnny Long, Jack Wiles, 2008](http://www.elsevier.com/books/no-tech-hacking/mitnick/978-1-59749-215-7)
-* [Social Engineering: The Art of Human Hacking by Christopher Hadnagy, 2010](http://wiley.com/WileyCDA/WileyTitle/productCd-0470639539.html)
-* [Unmasking the Social Engineer: The Human Element of Security by Christopher Hadnagy, 2014](http://wiley.com/WileyCDA/WileyTitle/productCd-1118608577.html)
-* [Social Engineering in IT Security: Tools, Tactics, and Techniques by Sharon Conheady, 2014](http://www.mhprofessional.com/product.php?isbn=0071818464)
-
-#### Lock Picking Books
-* [Practical Lock Picking by Deviant Ollam, 2012](https://www.elsevier.com/books/practical-lock-picking/ollam/978-1-59749-989-7)
-* [Keys to the Kingdom by Deviant Ollam, 2012](https://www.elsevier.com/books/keys-to-the-kingdom/ollam/978-1-59749-983-5)
-* [CIA Lock Picking Field Operative Training Manual](http://www.scribd.com/doc/7207/CIA-Lock-Picking-Field-Operative-Training-Manual)
-* [Lock Picking: Detail Overkill by Solomon](https://www.dropbox.com/s/y39ix9u9qpqffct/Lockpicking%20Detail%20Overkill.pdf?dl=0)
-* [Eddie the Wire books](https://www.dropbox.com/sh/k3z4dm4vyyojp3o/AAAIXQuwMmNuCch_StLPUYm-a?dl=0)
-
 
 ### Vulnerability Databases
 * [NVD](http://nvd.nist.gov/) - US National Vulnerability Database
@@ -250,31 +121,8 @@ A collection of awesome penetration testing resources
 * [DefCamp](http://defcamp.ro) - Largest Security Conference in Eastern Europe, held anually in Bucharest, Romania
 
 
-### Information Security Magazines
-* [2600: The Hacker Quarterly](http://www.2600.com/Magazine/DigitalEditions) - An American publication about technology and computer "underground"
-* [Phrack Magazine](http://www.phrack.org/) - By far the longest running hacker zine
-
-
-### Awesome Lists
-* [SecTools](http://sectools.org/) - Top 125 Network Security Tools
-* [C/C++ Programming](https://github.com/fffaraz/awesome-cpp) - One of the main language for open source security tools
-* [.NET Programming](https://github.com/quozd/awesome-dotnet) - A software framework for Microsoft Windows platform development
-* [Shell Scripting](https://github.com/alebcay/awesome-shell) - Command-line frameworks, toolkits, guides and gizmos
-* [Ruby Programming by @dreikanter](https://github.com/dreikanter/ruby-bookmarks) - The de-facto language for writing exploits
-* [Ruby Programming by @markets](https://github.com/markets/awesome-ruby) - The de-facto language for writing exploits
-* [Ruby Programming by @Sdogruyol](https://github.com/Sdogruyol/awesome-ruby) - The de-facto language for writing exploits
-* [JavaScript Programming](https://github.com/sorrycc/awesome-javascript) - In-browser development and scripting
-* [Node.js Programming by @sindresorhus](https://github.com/sindresorhus/awesome-nodejs) - JavaScript in command-line
-* [Node.js Programming by @vndmtrx](https://github.com/vndmtrx/awesome-nodejs) -  JavaScript in command-line
-* [Python tools for penetration testers](http://www.dirk-loss.de/python-tools.htm) - Lots of pentesting tools are written in Python
-* [Python Programming by @svaksha](https://github.com/svaksha/pythonidae) - General Python programming
-* [Python Programming by @vinta](https://github.com/vinta/awesome-python) - General Python programming
-* [Android Security](https://github.com/ashishb/android-security-awesome) - A collection of android security related resources
-* [Awesome Awesomness](https://github.com/bayandin/awesome-awesomeness) - The List of the Lists
-
-
 ### Contribution
-Your contributions and suggestions are heartily♥ welcome. (✿◕‿◕)
+Your contributions and suggestions are welcomed!
 
 ### License
 
